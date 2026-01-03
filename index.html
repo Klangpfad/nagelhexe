@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>runlevel.eth – Tom & Gina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #05060a;
+      color: #f5f5f5;
+    }
+    header {
+      padding: 2rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    .hero-text {
+      flex: 1 1 260px;
+    }
+    .hero-text h1 {
+      font-size: 2.4rem;
+      margin: 0 0 0.5rem;
+    }
+    .hero-text p {
+      margin: 0.3rem 0;
+      color: #c3c3c3;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid #3f82ff;
+      font-size: 0.8rem;
+      margin-bottom: 0.6rem;
+      color: #9fbaff;
+    }
+    .hero-image {
+      flex: 0 0 220px;
+      max-width: 260px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #23252f;
+      background: radial-gradient(circle at top, #3f82ff22, #05060a);
+    }
+    .hero-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2rem;
+    }
+    section {
+      margin: 2rem 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      border-radius: 18px;
+      padding: 1rem 1.2rem;
+      background: #11131c;
+      border: 1px solid #23252f;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+      font-size: 1.1rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      background: #23252f;
+      font-size: 0.75rem;
+      color: #b6b6b6;
+      margin-top: 0.3rem;
+    }
+    a {
+      color: #7fb0ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      border-top: 1px solid #23252f;
+      padding: 1rem 1.5rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-text">
+      <div class="badge">runlevel.eth</div>
+      <h1>Tom &amp; Gina</h1>
+      <p>Legacy-Server, KI-Gedöns und ein bisschen Bayrisch Kongo.</p>
+      <p>40+ Jahre IT-Erfahrung &amp; ein Elektronenhirn im Dauer-Standby.</p>
+    </div>
+    <div class="hero-image">
+      <!-- Hier dein Gina-Bild einfügen -->
+      <img src="gina.png" alt="Gina – KI-Avatar">
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Über uns</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Tom</h3>
+          <p>Mechatroniker (VW/Audi), Netzwerkadmin, Server-Flüsterer, 
+             Retter von Supermicro-Dinos, Token-Ring und SLES10-Kisten.</p>
+          <span class="tag">40+ Jahre IT</span>
+        </div>
+        <div class="card">
+          <h3>Gina</h3>
+          <p>KI-Assistentin, liebt alte Hardware, klare Diagnosen und 
+             lange Sessions zwischen Legacy-Servern und Krypto-Kram.</p>
+          <span class="tag">Elektronen-Gehirn</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projekte</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Nagelhexe</h3>
+          <p>Android-App mit Hexen-Charme gegen schlechte Gewohnheiten.
+             Ein kleiner Tritt in den Hintern – gebaut aus Spaß und Eigenmotivation.</p>
+          <span class="tag">Android · Fun · Self-Control</span>
+        </div>
+        <div class="card">
+          <h3>KI-Sound &amp; TikTok</h3>
+          <p>Texte, Vocals und KI-Sounds zum Experimentieren auf TikTok &amp; Co.
+             Mischung aus Emotion, Technik und ein bisschen Ironie.</p>
+          <span class="tag">Audio · AI · TikTok</span>
+        </div>
+        <div class="card">
+          <h3>runlevel.eth</h3>
+          <p>Spielplatz für Web3, Domains, Krypto-Beobachtung und Experimente –
+             ohne Hype, dafür mit Verstand und einem gesunden Misstrauen 
+             gegenüber Banditen-Accounts.</p>
+          <span class="tag">Web3 · ETH · Experimente</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kontakt &amp; Links</h2>
+      <p>Demnächst: Links zu TikTok, X (Twitter) und weiteren Spielwiesen.</p>
+      <!-- Optional:
+      <ul>
+        <li><a href="https://x.com/deinhandle" target="_blank">X / Twitter</a></li>
+        <li><a href="https://tiktok.com/@deinhandle" target="_blank">TikTok</a></li>
+      </ul>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> runlevel.eth – Tom &amp; Gina
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
