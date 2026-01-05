@@ -1,0 +1,181 @@
+/* Shared site styles */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #05060a;
+  color: #f5f5f5;
+}
+
+header {
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 260px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem;
+}
+
+.hero-text p {
+  margin: 0.3rem 0;
+  color: #c3c3c3;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #3f82ff;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  color: #9fbaff;
+}
+
+.hero-image {
+  flex: 0 0 220px;
+  max-width: 260px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #23252f;
+  background: radial-gradient(circle at top, #3f82ff22, #05060a);
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  border-radius: 18px;
+  padding: 1rem 1.2rem;
+  background: #11131c;
+  border: 1px solid #23252f;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #23252f;
+  font-size: 0.75rem;
+  color: #b6b6b6;
+  margin-top: 0.3rem;
+}
+
+a {
+  color: #7fb0ff;
+  text-decoration: none;
+}
+
+/* Footer – aligned with content boxes */
+footer {
+  border-top: 1px solid #23252f;
+  padding: 1rem 1.5rem 2rem;
+  max-width: 800px;        /* ← exakt wie .box */
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Legal pages overrides (Impressum / Datenschutz) */
+body.legal {
+  background: #05060a;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+body.legal a {
+  color: #7fb0ff;
+}
+
+body.legal h1 {
+  margin-top: 0;
+}
+
+.box {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #11131c;
+  border: 1px solid #23252f;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+/* Subtle interaction polish */
+a {
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: #a9c6ff;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid #3f82ff;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Card hover – very subtle */
+.card {
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #3f82ff55;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* ENS badge link */
+.badge.ens:hover {
+  color: #cfe0ff;
+  border-color: #3f82ff;
+}
