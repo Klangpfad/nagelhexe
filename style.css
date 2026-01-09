@@ -179,3 +179,11 @@ a:focus-visible {
   color: #cfe0ff;
   border-color: #3f82ff;
 }
+
+/* Links in Projektkarten */
+.card .links{
+  margin: .6rem 0 0;
+}
+.card .links a{
+  margin-right: .25rem;
+}
